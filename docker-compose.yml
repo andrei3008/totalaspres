@@ -5,7 +5,7 @@ services:
     image: laravelsail/php82-composer:latest
     container_name: laravel-app
     ports:
-      - "${APP_PORT:-80}:80"
+      - "8001:80"
       - "${VITE_PORT:-5173}:${VITE_PORT:-5173}"
     environment:
       WWWUSER: "${WWWUSER:-1000}"
