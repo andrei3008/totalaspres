@@ -21,6 +21,7 @@
 ## 🔧 Ce face docker-compose.portainer.yml
 
 - Folosește Dockerfile-ul care copiază codul în container
+- Copiază `.env.production` ca `.env` pentru configurația de producție
 - Nu folosește volume mounting (care cauzează probleme în Portainer)
 - Configurație simplificată specific pentru deployment
 

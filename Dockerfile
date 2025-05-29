@@ -13,6 +13,9 @@ WORKDIR /var/www/html
 # Copy application code (for Portainer deployment)
 COPY . /var/www/html/
 
+# Copy production environment file
+COPY .env.production /var/www/html/.env
+
 # Create required directories
 RUN mkdir -p /var/www/html/storage/logs && \
     mkdir -p /var/www/html/storage/framework/cache && \
