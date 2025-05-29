@@ -71,7 +71,7 @@ export default function Payments({ auth }) {
 
     return (
         <MainLayout>
-            <Head title="Plăți online - Total As Pres" />
+            <Head title="Plăți online - SC TOTAL AS PRES SRL" />
             
             <div className="bg-gray-50 min-h-screen">
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
@@ -234,9 +234,10 @@ export default function Payments({ auth }) {
                                                     Detalii transfer bancar
                                                 </h4>
                                                 <div className="text-sm text-emerald-700 space-y-1">
-                                                    <p><strong>Beneficiar:</strong> Total As Pres SRL</p>
-                                                    <p><strong>IBAN:</strong> RO49 AAAA 1B31 0075 9384 0000</p>
-                                                    <p><strong>Banca:</strong> BCR</p>
+                                                    <p><strong>Beneficiar:</strong> SC TOTAL AS PRES SRL</p>
+                                                    <p><strong>CUI:</strong> 48721770</p>
+                                                    <p><strong>IBAN:</strong> În curând disponibil</p>
+                                                    <p><strong>Banca:</strong> În curând disponibil</p>
                                                     <p><strong>Descriere:</strong> {selectedPayment.name}</p>
                                                 </div>
                                             </div>

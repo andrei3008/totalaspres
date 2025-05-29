@@ -33,7 +33,7 @@ export default function Notifications({ auth }) {
 
     return (
         <MainLayout>
-            <Head title="Setări notificări - Total As Pres" />
+            <Head title="Setări notificări - SC TOTAL AS PRES SRL" />
             
             <div className="bg-gray-50 min-h-screen">
                 <div className="max-w-4xl mx-auto py-16 px-4 sm:px-6 lg:px-8">

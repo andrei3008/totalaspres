@@ -132,7 +132,7 @@ export default function Documents({ documents = {} }) {
 
     return (
         <Layout>
-            <Head title="Documente utile - Total As Pres" />
+            <Head title="Documente utile - SC TOTAL AS PRES SRL" />
             
             {/* Hero Section */}
             <section className="relative bg-gradient-to-br from-emerald-500 to-teal-600 py-20">

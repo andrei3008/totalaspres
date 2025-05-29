@@ -44,14 +44,14 @@ export default function About() {
 
     return (
         <Layout>
-            <Head title="Despre noi - Total As Pres" />
+            <Head title="Despre noi - SC TOTAL AS PRES SRL" />
             
             {/* Hero Section */}
             <section className="relative bg-gradient-to-br from-emerald-500 to-teal-600 py-20">
                 <div className="absolute inset-0 bg-black opacity-20"></div>
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                        Despre Total As Pres
+                        Despre SC TOTAL AS PRES SRL
                     </h1>
                     <p className="text-xl text-emerald-100 max-w-3xl mx-auto">
                         Partenerul dumneavoastră de încredere în administrarea profesională de imobile
@@ -69,7 +69,7 @@ export default function About() {
                             </h2>
                             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                                 Cu peste 15 ani de experiență în domeniul administrării de imobile, 
-                                Total As Pres a devenit partenerul de încredere pentru asociațiile 
+                                SC TOTAL AS PRES SRL a devenit partenerul de încredere pentru asociațiile 
                                 de proprietari care doresc servicii profesionale și transparente.
                             </p>
                             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
@@ -87,7 +87,7 @@ export default function About() {
                             <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl p-8">
                                 <img 
                                     src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=500&h=400&fit=crop&crop=center" 
-                                    alt="Echipa Total As Pres" 
+                                    alt="Echipa SC TOTAL AS PRES SRL" 
                                     className="rounded-lg shadow-lg w-full h-64 object-cover"
                                 />
                             </div>

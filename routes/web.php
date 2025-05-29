@@ -24,6 +24,10 @@ Route::get('/documents/{document}/download', [DocumentController::class, 'downlo
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::post('/contact', [PageController::class, 'contactSubmit'])->name('contact.submit');
 
+Route::get('/terms', function () {
+    return Inertia::render('Terms');
+})->name('terms');
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

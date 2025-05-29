@@ -18,7 +18,7 @@ export default function Dashboard({ auth }) {
 
     return (
         <MainLayout>
-            <Head title="Panou de administrare - Total As Pres" />
+            <Head title="Panou de administrare - SC TOTAL AS PRES SRL" />
             
             {/* Hero Section */}
             <section className="bg-gradient-to-br from-emerald-600 via-green-700 to-emerald-800 py-16">

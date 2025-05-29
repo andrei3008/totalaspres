@@ -54,7 +54,7 @@ export default function Home() {
 
     return (
         <Layout>
-            <Head title="Total As Pres - Administrare Profesională Imobile" />
+            <Head title="SC TOTAL AS PRES SRL - Administrare Profesională Imobile" />
             
             {/* Hero Section */}
             <section className="relative overflow-hidden bg-gradient-to-br from-emerald-500 via-teal-600 to-emerald-700">
@@ -141,7 +141,7 @@ export default function Home() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div>
                             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                                De ce să alegeți Total As Pres?
+                                De ce să alegeți SC TOTAL AS PRES SRL?
                             </h2>
                             <p className="text-lg text-gray-600 mb-8">
                                 Cu peste 15 ani de experiență în administrarea imobilelor, 
@@ -162,7 +162,7 @@ export default function Home() {
                             <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl p-8">
                                 <img 
                                     src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500&h=400&fit=crop&crop=center" 
-                                    alt="Echipa Total As Pres" 
+                                    alt="Echipa SC TOTAL AS PRES SRL" 
                                     className="rounded-lg shadow-lg w-full h-64 object-cover"
                                 />
                             </div>

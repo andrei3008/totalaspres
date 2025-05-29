@@ -59,19 +59,19 @@ export default function Contact() {
         {
             icon: PhoneIcon,
             title: 'Telefon',
-            details: ['0123 456 789', '0123 456 790'],
+            details: ['În curând', 'Informații disponibile'],
             description: 'Luni - Vineri: 09:00 - 18:00'
         },
         {
             icon: EnvelopeIcon,
             title: 'Email',
-            details: ['contact@totalaspres.ro', 'info@totalaspres.ro'],
+            details: ['totalaspres@gmail.com', 'Contact principal'],
             description: 'Răspundem în maximum 24 ore'
         },
         {
             icon: MapPinIcon,
             title: 'Adresă',
-            details: ['Str. Exemplu nr. 123', 'București, Sector 1'],
+            details: ['ALEEA I BANU MARACINE, NR. 5', 'CARCEA, DOLJ'],
             description: 'Program vizite: doar cu programare'
         },
         {
@@ -84,7 +84,7 @@ export default function Contact() {
 
     return (
         <Layout>
-            <Head title="Contact - Total As Pres" />
+            <Head title="Contact - SC TOTAL AS PRES SRL" />
             
             {/* Hero Section */}
             <section className="relative bg-gradient-to-br from-emerald-500 to-teal-600 py-20">
@@ -310,7 +310,7 @@ export default function Contact() {
                                 <div className="text-center">
                                     <MapPinIcon className="h-12 w-12 text-gray-400 mx-auto mb-2" />
                                     <p className="text-gray-500">Hartă interactivă</p>
-                                    <p className="text-gray-400 text-sm">Str. Exemplu nr. 123, București</p>
+                                    <p className="text-gray-400 text-sm">ALEEA I BANU MARACINE, NR. 5, CARCEA</p>
                                 </div>
                             </div>
 
@@ -322,20 +322,7 @@ export default function Contact() {
                                 
                                 <div className="space-y-4">
                                     <a 
-                                        href="tel:0123456789" 
-                                        className="flex items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
-                                    >
-                                        <div className="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center mr-4">
-                                            <PhoneIcon className="h-6 w-6 text-white" />
-                                        </div>
-                                        <div>
-                                            <p className="font-semibold text-gray-900">Sună acum</p>
-                                            <p className="text-emerald-600">0123 456 789</p>
-                                        </div>
-                                    </a>
-
-                                    <a 
-                                        href="mailto:contact@totalaspres.ro" 
+                                        href="mailto:totalaspres@gmail.com" 
                                         className="flex items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
                                     >
                                         <div className="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center mr-4">
@@ -343,9 +330,19 @@ export default function Contact() {
                                         </div>
                                         <div>
                                             <p className="font-semibold text-gray-900">Trimite email</p>
-                                            <p className="text-emerald-600">contact@totalaspres.ro</p>
+                                            <p className="text-emerald-600">totalaspres@gmail.com</p>
                                         </div>
                                     </a>
+
+                                    <div className="flex items-center p-4 bg-white rounded-lg shadow-sm">
+                                        <div className="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center mr-4">
+                                            <PhoneIcon className="h-6 w-6 text-white" />
+                                        </div>
+                                        <div>
+                                            <p className="font-semibold text-gray-900">Telefon</p>
+                                            <p className="text-emerald-600">În curând disponibil</p>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div className="mt-6 p-4 bg-white bg-opacity-50 rounded-lg">

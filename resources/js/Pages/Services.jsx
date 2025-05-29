@@ -10,6 +10,7 @@ import {
     ChartBarIcon,
     CheckCircleIcon,
     PhoneIcon,
+    EnvelopeIcon,
     ClockIcon,
     ShieldCheckIcon
 } from '@heroicons/react/24/outline';
@@ -110,7 +111,7 @@ export default function Services() {
 
     return (
         <Layout>
-            <Head title="Servicii - Total As Pres" />
+            <Head title="Servicii - SC TOTAL AS PRES SRL" />
             
             {/* Hero Section */}
             <section className="relative bg-gradient-to-br from-emerald-500 to-teal-600 py-20">
@@ -324,11 +325,11 @@ export default function Services() {
                             Solicită ofertă gratuită
                         </Link>
                         <a 
-                            href="tel:0123456789" 
+                            href="mailto:totalaspres@gmail.com" 
                             className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-emerald-600 transition-all duration-300 flex items-center justify-center"
                         >
-                            <PhoneIcon className="h-5 w-5 mr-2" />
-                            Sună acum: 0123 456 789
+                            <EnvelopeIcon className="h-5 w-5 mr-2" />
+                            Contactează-ne: totalaspres@gmail.com
                         </a>
                     </div>
                 </div>

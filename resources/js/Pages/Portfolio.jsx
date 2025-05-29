@@ -84,7 +84,7 @@ export default function Portfolio({ buildings = [] }) {
 
     return (
         <Layout>
-            <Head title="Portofoliu - Total As Pres" />
+            <Head title="Portofoliu - SC TOTAL AS PRES SRL" />
             
             {/* Hero Section */}
             <section className="relative bg-gradient-to-br from-emerald-500 to-teal-600 py-20">
