@@ -87,7 +87,7 @@ export default function Portfolio({ buildings = [] }) {
             <Head title="Portofoliu - Total As Pres" />
             
             {/* Hero Section */}
-            <section className="relative bg-gradient-to-br from-emerald-600 via-green-700 to-emerald-800 py-24">
+            <section className="relative bg-gradient-to-br from-emerald-500 to-teal-600 py-20">
                 <div className="absolute inset-0 bg-black opacity-20"></div>
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
