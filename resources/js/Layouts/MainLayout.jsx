@@ -75,7 +75,7 @@ export default function Layout({ children }) {
                             ) : (
                                 <div className="flex items-center">
                                     <a 
-                                        href="https://wa.me/40700000000?text=Bună%20ziua!%20Sunt%20interesat%20de%20serviciile%20de%20administrare%20imobile."
+                                        href="https://wa.me/40787444874?text=Bună%20ziua!%20Sunt%20interesat%20de%20serviciile%20de%20administrare%20imobile."
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 shadow-md hover:shadow-lg"
@@ -136,7 +136,7 @@ export default function Layout({ children }) {
                             ) : (
                                 <div className="border-t border-gray-200 pt-4">
                                     <a 
-                                        href="https://wa.me/40700000000?text=Bună%20ziua!%20Sunt%20interesat%20de%20serviciile%20de%20administrare%20imobile."
+                                        href="https://wa.me/40787444874?text=Bună%20ziua!%20Sunt%20interesat%20de%20serviciile%20de%20administrare%20imobile."
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="flex items-center justify-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-md text-base font-medium mx-3 transition-all duration-200"

@@ -210,7 +210,7 @@ export default function Contact() {
                                                     onChange={handleChange}
                                                     required
                                                     className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors"
-                                                    placeholder="0123 456 789"
+                                                    placeholder="0787 444 874"
                                                 />
                                             </div>
                                         </div>
@@ -340,7 +340,7 @@ export default function Contact() {
                                         </div>
                                         <div>
                                             <p className="font-semibold text-gray-900">Telefon</p>
-                                            <p className="text-emerald-600">În curând disponibil</p>
+                                            <p className="text-emerald-600">0787 444 874</p>
                                         </div>
                                     </div>
                                 </div>

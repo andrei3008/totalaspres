@@ -209,9 +209,9 @@ export default function Home() {
                         </Link>
                         
                         <div className="flex items-center space-x-6 text-white">
-                            <a href="tel:0123456789" className="flex items-center space-x-2 hover:text-emerald-200 transition-colors">
+                            <a href="tel:0787444874" className="flex items-center space-x-2 hover:text-emerald-200 transition-colors">
                                 <PhoneIcon className="h-5 w-5" />
-                                <span>0123 456 789</span>
+                                <span>0787 444 874</span>
                             </a>
                             <a href="mailto:contact@totalaspres.ro" className="flex items-center space-x-2 hover:text-emerald-200 transition-colors">
                                 <EnvelopeIcon className="h-5 w-5" />

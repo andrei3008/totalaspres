@@ -224,11 +224,11 @@ export default function Dashboard({ auth }) {
                                 <h4 className="font-semibold text-gray-900 mb-2">Contact de urgență</h4>
                                 <p className="text-sm text-gray-600 mb-3">Pentru situații de urgență, sunați:</p>
                                 <a
-                                    href="tel:0123456789"
+                                    href="tel:0787444874"
                                     className="inline-flex items-center space-x-2 text-red-600 hover:text-red-700 font-semibold"
                                 >
                                     <PhoneIcon className="h-4 w-4" />
-                                    <span>0123 456 789</span>
+                                    <span>0787 444 874</span>
                                 </a>
                             </div>
                         </div>
