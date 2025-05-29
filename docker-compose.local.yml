@@ -1,0 +1,76 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: totalaspres-app-local
+    restart: unless-stopped
+    ports:
+      - "8001:80"
+    environment:
+      APP_ENV: local
+      APP_DEBUG: true
+      APP_URL: http://localhost:8001
+      DB_CONNECTION: sqlite
+      DB_DATABASE: /var/www/html/database/database.sqlite
+      REDIS_HOST: redis
+      REDIS_PASSWORD: null
+      REDIS_PORT: 6379
+    volumes:
+      - .:/var/www/html:cached
+      - /var/www/html/node_modules
+      - /var/www/html/vendor
+    depends_on:
+      - redis
+    networks:
+      - totalaspres-local
+    command: >
+      sh -c "
+        echo 'Starting Laravel application in local development mode...' &&
+        
+        # Install PHP dependencies
+        echo 'Installing PHP dependencies...' &&
+        composer install --optimize-autoloader &&
+        
+        # Install Node.js dependencies and build assets
+        echo 'Installing Node.js dependencies...' &&
+        npm ci &&
+        echo 'Building assets...' &&
+        npm run build &&
+        
+        # Setup database
+        echo 'Setting up database...' &&
+        touch /var/www/html/database/database.sqlite &&
+        php artisan migrate --force &&
+        
+        # Clear caches
+        echo 'Clearing caches...' &&
+        php artisan config:clear &&
+        php artisan cache:clear &&
+        php artisan route:clear &&
+        php artisan view:clear &&
+        
+        echo 'Starting web server...' &&
+        php artisan serve --host=0.0.0.0 --port=80
+      "
+
+  redis:
+    image: redis:7-alpine
+    container_name: totalaspres-redis-local
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data-local:/data
+    networks:
+      - totalaspres-local
+
+volumes:
+  redis-data-local:
+    driver: local
+
+networks:
+  totalaspres-local:
+    driver: bridge
