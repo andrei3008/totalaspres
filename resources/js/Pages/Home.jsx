@@ -141,7 +141,7 @@ export default function Home() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div>
                             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                                De ce să alegeți SC TOTAL AS PRES SRL?
+                                De ce să alegeți TOTAL AS PRES?
                             </h2>
                             <p className="text-lg text-gray-600 mb-8">
                                 Cu peste 15 ani de experiență în administrarea imobilelor, 
