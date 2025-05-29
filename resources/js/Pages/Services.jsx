@@ -184,9 +184,9 @@ export default function Services() {
                                     <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl p-8">
                                         <img 
                                             src={`https://images.unsplash.com/${
-                                                index === 0 ? 'photo-1560472354-b33ff0c44a43' : // financial/calculator
+                                                index === 0 ? 'photo-1554224155-8d04cb21cd6c' : // financial documents and calculator
                                                 index === 1 ? 'photo-1581091226825-a6a2a5aee158' : // technical maintenance  
-                                                index === 2 ? 'photo-1507003211169-0a1dd7228f2d' : // legal/office work
+                                                index === 2 ? 'photo-1521791136064-7986c2920216' : // professional office team
                                                 'photo-1600880292203-757bb62b4baf' // client relations
                                             }?w=500&h=400&fit=crop&crop=center`}
                                             alt={service.title}
@@ -218,9 +218,9 @@ export default function Services() {
                                 <div className="relative h-48">
                                     <img 
                                         src={`https://images.unsplash.com/photo-${
-                                            index === 0 ? '1551288049-14ec30e67a33' : // analytics/reporting - charts and graphs
-                                            index === 1 ? '1568605114967-8130f3a36994' : // security - surveillance camera
-                                            '1559136555-4f7e1ba8c213' // 24/7 support - help desk
+                                            index === 0 ? '1551836022-d5d88e9218df' : // business charts and analytics on laptop
+                                            index === 1 ? '1568605114967-8130f3a36994' : // security camera system
+                                            '1553484771-371a605b060b' // 24/7 customer support center
                                         }?w=400&h=300&fit=crop&crop=center`}
                                         alt={service.title}
                                         className="w-full h-full object-cover"
@@ -261,25 +261,25 @@ export default function Services() {
                                 step: '01',
                                 title: 'Consultația inițială',
                                 description: 'Analizăm nevoile asociației și oferim o consultație gratuită',
-                                image: '1573496359348-928f4004e23e' // consultation meeting
+                                image: '1600267185624-ac61ac7d47ed' // business consultation meeting
                             },
                             {
                                 step: '02',
                                 title: 'Propunerea de colaborare',
                                 description: 'Elaborăm o ofertă personalizată conform nevoilor identificate',
-                                image: '1554224155-9da725ade4b4' // proposal document
+                                image: '1586297135537-5018fdee1621' // business proposal documents
                             },
                             {
                                 step: '03',
                                 title: 'Semnarea contractului',
                                 description: 'Formalizăm colaborarea prin contract transparent și clar',
-                                image: '1450101499163-71c4c95cb929' // contract signing
+                                image: '1556742044-3c52d6e88c62' // business handshake contract
                             },
                             {
                                 step: '04',
                                 title: 'Implementarea serviciilor',
                                 description: 'Începem administrarea cu preluarea tuturor responsabilităților',
-                                image: '1507003211169-0a1dd7228f2d' // implementation/work
+                                image: '1552581234-26160f608093' // professional team working
                             }
                         ].map((process, index) => (
                             <div key={index} className="text-center">
