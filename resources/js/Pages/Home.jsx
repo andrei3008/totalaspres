@@ -46,9 +46,9 @@ export default function Home() {
     ];
 
     const stats = [
-        { value: '150+', label: 'Imobile administrate' },
-        { value: '5000+', label: 'Apartamente gestionate' },
-        { value: '15+', label: 'Ani de experiență' },
+        { value: '50+', label: 'Imobile administrate' },
+        { value: '500+', label: 'Apartamente gestionate' },
+        { value: '5+', label: 'Ani de experiență' },
         { value: '99%', label: 'Satisfacție clienți' }
     ];
 
@@ -175,7 +175,7 @@ export default function Home() {
                                         ))}
                                     </div>
                                     <div>
-                                        <div className="text-sm font-semibold text-gray-900">150+ clienți mulțumiți</div>
+                                        <div className="text-sm font-semibold text-gray-900">50+ clienți mulțumiți</div>
                                         <div className="flex items-center">
                                             {[1,2,3,4,5].map((i) => (
                                                 <StarIcon key={i} className="h-4 w-4 text-emerald-400 fill-current" />

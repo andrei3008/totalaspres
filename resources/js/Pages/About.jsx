@@ -36,9 +36,9 @@ export default function About() {
     ];
 
     const stats = [
-        { icon: BuildingOfficeIcon, value: '150+', label: 'Imobile administrate' },
-        { icon: UsersIcon, value: '5000+', label: 'Apartamente gestionate' },
-        { icon: ClockIcon, value: '15+', label: 'Ani de experiență' },
+        { icon: BuildingOfficeIcon, value: '50+', label: 'Imobile administrate' },
+        { icon: UsersIcon, value: '500+', label: 'Apartamente gestionate' },
+        { icon: ClockIcon, value: '5+', label: 'Ani de experiență' },
         { icon: TrophyIcon, value: '99%', label: 'Satisfacție clienți' }
     ];
 
@@ -78,7 +78,7 @@ export default function About() {
                                 eficiență și satisfacția clienților.
                             </p>
                             <p className="text-lg text-gray-600 leading-relaxed">
-                                Astăzi, administrăm peste 150 de imobile și gestionăm mai mult de 5000 
+                                Astăzi, administrăm peste 50 de imobile și gestionăm mai mult de 5000 
                                 de apartamente, menținând un nivel de satisfacție de 99% printre clienții noștri.
                             </p>
                         </div>

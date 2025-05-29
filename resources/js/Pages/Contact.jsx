@@ -59,7 +59,7 @@ export default function Contact() {
         {
             icon: PhoneIcon,
             title: 'Telefon',
-            details: ['În curând', 'Informații disponibile'],
+            details: ['0787444874', 'Urgențe NON-STOP'],
             description: 'Luni - Vineri: 09:00 - 18:00'
         },
         {
