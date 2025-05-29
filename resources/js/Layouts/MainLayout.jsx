@@ -19,7 +19,7 @@ export default function Layout({ children }) {
                                     <span className="text-white font-bold text-sm">TAP</span>
                                 </div>
                                 <span className="text-xl font-bold bg-gradient-to-r from-emerald-500 to-teal-600 bg-clip-text text-transparent">
-                                    SC TOTAL AS PRES SRL
+                                    TOTAL AS PRES
                                 </span>
                             </Link>
                             
