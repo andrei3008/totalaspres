@@ -1,0 +1,38 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: laravel-app-prod
+    restart: unless-stopped
+    ports:
+      - "8001:80"
+    environment:
+      DB_CONNECTION: sqlite
+      DB_DATABASE: /var/www/html/database/database.sqlite
+      APP_ENV: production
+      APP_DEBUG: false
+      APP_KEY: base64:YOUR_APP_KEY_HERE
+    depends_on:
+      - redis
+    networks:
+      - sail
+
+  redis:
+    image: redis:7-alpine
+    container_name: redis-prod
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - sail-redis:/data
+    networks:
+      - sail
+
+volumes:
+  sail-redis:
+    driver: local
+
+networks:
+  sail:
+    driver: bridge

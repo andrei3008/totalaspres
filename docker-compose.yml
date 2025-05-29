@@ -23,16 +23,32 @@ services:
     command: >
       sh -c "
         echo 'Starting Laravel application...' &&
-        if [ ! -f /var/www/html/composer.json ]; then
-          echo 'Error: Code not mounted properly. Check volume configuration.';
+        # Check if we're in development mode (volumes mounted) or production mode (code copied)
+        if [ -f /var/www/html/composer.json ]; then
+          echo 'Code found, proceeding with startup...'
+        else
+          echo 'Error: Code not found. Check if code is copied into container or volumes are mounted properly.';
           exit 1;
         fi &&
-        echo 'Installing PHP dependencies...' &&
-        composer install --no-dev --optimize-autoloader &&
-        echo 'Installing Node.js dependencies...' &&
-        npm ci &&
-        echo 'Building assets...' &&
-        npm run build &&
+        
+        # Only install dependencies if in development mode (when vendor doesn't exist or is mounted)
+        if [ ! -d /var/www/html/vendor ] || [ ! -f /var/www/html/vendor/autoload.php ]; then
+          echo 'Installing PHP dependencies...' &&
+          composer install --no-dev --optimize-autoloader
+        else
+          echo 'PHP dependencies already installed.'
+        fi &&
+        
+        # Only install node dependencies and build if needed
+        if [ ! -d /var/www/html/node_modules ] || [ ! -d /var/www/html/public/build ]; then
+          echo 'Installing Node.js dependencies...' &&
+          npm ci &&
+          echo 'Building assets...' &&
+          npm run build
+        else
+          echo 'Node dependencies and assets already built.'
+        fi &&
+        
         echo 'Setting up database...' &&
         touch /var/www/html/database/database.sqlite &&
         php artisan migrate --force &&
