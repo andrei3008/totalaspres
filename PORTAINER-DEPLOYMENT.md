@@ -1,54 +1,48 @@
-# Deployment în Portainer
+# Laravel App Deployment în Portainer
 
-## Problema rezolvată
+## 🚀 Soluția finală pentru eroarea "Code not mounted properly"
 
-Containerul nu pornea în Portainer cu eroarea "Code not mounted properly" pentru că folosea volume mounting în loc să copieze codul în container.
+### Pentru Portainer - folosește docker-compose.portainer.yml
 
-## Soluții implementate
+1. **În Portainer, creează un nou Stack**
+   - Nume: `totalaspres-app`
+   - Selectează **Repository** 
+   - Repository URL: URL-ul tău de Git
+   - Branch: `main`
+   - **Compose file path: `docker-compose.portainer.yml`** ⭐
 
-### 1. Dockerfile actualizat
-- Copiază codul în container în timpul build-ului
-- Instalează dependențele în timpul build-ului
-- Configurează permisiunile corecte
+2. **Deploy stack-ul**
+   - Click "Deploy the stack"
+   - Asteaptă ca aplicația să se construiască (poate dura 2-3 minute)
 
-### 2. docker-compose.prod.yml
-Fișier specific pentru producție/Portainer fără volume mounting:
-```bash
-docker-compose -f docker-compose.prod.yml up -d
-```
+3. **Verifică aplicația**
+   - Aplicația va fi disponibilă pe portul **8001**
 
-### 3. docker-compose.yml îmbunătățit
-Detectează automat dacă rulează în dev (cu volumes) sau prod (cu cod copiat).
+## 🔧 Ce face docker-compose.portainer.yml
 
-## Instrucțiuni pentru Portainer
+- Folosește Dockerfile-ul care copiază codul în container
+- Nu folosește volume mounting (care cauzează probleme în Portainer)
+- Configurație simplificată specific pentru deployment
 
-### Opțiunea 1: Folosește docker-compose.prod.yml
-1. În Portainer, când creezi stack-ul, folosește conținutul din `docker-compose.prod.yml`
-2. Setează variabilele de environment necesare
-3. Deploy stack-ul
+## ⚠️ Important
 
-### Opțiunea 2: Build manual
-1. Rulează script-ul de deployment:
-```bash
-./deploy-portainer.sh
-```
+- **NU** folosi `docker-compose.yml` în Portainer (este pentru development local)
+- **DA** folosește `docker-compose.portainer.yml` în Portainer
 
-### Opțiunea 3: Stack în Portainer cu Git
-1. În Portainer, creează un nou Stack
-2. Selectează "Git Repository"
-3. Adaugă URL-ul repository-ului
-4. Setează compose file la `docker-compose.prod.yml`
-5. Deploy
+## 🐛 Troubleshooting
 
-## Variabile de environment necesare în Portainer
+Dacă încă ai probleme:
 
-```env
-APP_ENV=production
-APP_DEBUG=false
-APP_KEY=base64:YOUR_GENERATED_KEY_HERE
-DB_CONNECTION=sqlite
-DB_DATABASE=/var/www/html/database/database.sqlite
-```
+1. Verifică logs-urile în Portainer pentru container
+2. Asigură-te că ai selectat `docker-compose.portainer.yml` ca fișier compose
+3. Verifică că portul 8001 nu este folosit de altă aplicație
+
+## 📁 Fișiere importante
+
+- `Dockerfile` - Configurația containerului (copiază codul în container)
+- `docker-compose.portainer.yml` - Pentru Portainer ⭐
+- `docker-compose.yml` - Pentru development local
+- `.dockerignore` - Fișiere excluse din build
 
 ## Generarea APP_KEY
 

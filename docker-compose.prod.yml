@@ -3,36 +3,35 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: laravel-app-prod
+    container_name: totalaspres-app
     restart: unless-stopped
     ports:
       - "8001:80"
     environment:
-      DB_CONNECTION: sqlite
-      DB_DATABASE: /var/www/html/database/database.sqlite
       APP_ENV: production
       APP_DEBUG: false
-      APP_KEY: base64:YOUR_APP_KEY_HERE
+      DB_CONNECTION: sqlite
+      DB_DATABASE: /var/www/html/database/database.sqlite
     depends_on:
       - redis
     networks:
-      - sail
+      - totalaspres
 
   redis:
     image: redis:7-alpine
-    container_name: redis-prod
+    container_name: totalaspres-redis
     restart: unless-stopped
     ports:
       - "6379:6379"
     volumes:
-      - sail-redis:/data
+      - redis-data:/data
     networks:
-      - sail
+      - totalaspres
 
 volumes:
-  sail-redis:
+  redis-data:
     driver: local
 
 networks:
-  sail:
+  totalaspres:
     driver: bridge
