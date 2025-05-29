@@ -1,0 +1,71 @@
+FROM laravelsail/php82-composer:latest
+
+# Install Node.js LTS (v20) and Redis extension
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
+    apt-get update && \
+    apt-get install -y nodejs && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/* && \
+    pecl install redis && \
+    docker-php-ext-enable redis && \
+    echo "extension=redis.so" > /usr/local/etc/php/conf.d/redis.ini
+
+# Install global packages
+RUN npm install -g npm@latest
+
+# Set working directory
+WORKDIR /var/www/html
+
+# Create start script
+RUN echo '#!/bin/bash\n\
+set -e\n\
+echo "Starting Laravel application in local development mode..."\n\
+\n\
+# Check if we have the Laravel project files\n\
+if [ ! -f "composer.json" ]; then\n\
+    echo "Error: composer.json not found. Make sure the project is mounted correctly."\n\
+    exit 1\n\
+fi\n\
+\n\
+# Copy environment file\n\
+if [ -f ".env.local" ]; then\n\
+    cp .env.local .env\n\
+    echo "Environment file copied from .env.local"\n\
+else\n\
+    echo "Warning: .env.local not found, using existing .env"\n\
+fi\n\
+\n\
+# Create required directories\n\
+mkdir -p storage/logs storage/framework/{cache,sessions,views} bootstrap/cache database\n\
+\n\
+echo "Installing PHP dependencies..."\n\
+composer install --optimize-autoloader --no-interaction\n\
+\n\
+echo "Installing Node.js dependencies..."\n\
+npm ci\n\
+\n\
+echo "Building assets..."\n\
+npm run build\n\
+\n\
+echo "Setting up database..."\n\
+touch database/database.sqlite\n\
+php artisan migrate --force\n\
+\n\
+echo "Clearing caches..."\n\
+php artisan config:clear\n\
+php artisan cache:clear\n\
+php artisan route:clear\n\
+php artisan view:clear\n\
+\n\
+echo "Setting permissions..."\n\
+chmod -R 755 storage bootstrap/cache\n\
+chmod 664 database/database.sqlite\n\
+\n\
+echo "Starting web server on port 80..."\n\
+php artisan serve --host=0.0.0.0 --port=80\n\
+' > /start.sh && chmod +x /start.sh
+
+# Default command
+CMD ["/start.sh"]
+
+EXPOSE 80

@@ -4,7 +4,7 @@ services:
   app:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.local
     container_name: totalaspres-app-local
     restart: unless-stopped
     ports:
@@ -26,35 +26,7 @@ services:
       - redis
     networks:
       - totalaspres-local
-    command: >
-      sh -c "
-        echo 'Starting Laravel application in local development mode...' &&
-        
-        # Install PHP dependencies
-        echo 'Installing PHP dependencies...' &&
-        composer install --optimize-autoloader &&
-        
-        # Install Node.js dependencies and build assets
-        echo 'Installing Node.js dependencies...' &&
-        npm ci &&
-        echo 'Building assets...' &&
-        npm run build &&
-        
-        # Setup database
-        echo 'Setting up database...' &&
-        touch /var/www/html/database/database.sqlite &&
-        php artisan migrate --force &&
-        
-        # Clear caches
-        echo 'Clearing caches...' &&
-        php artisan config:clear &&
-        php artisan cache:clear &&
-        php artisan route:clear &&
-        php artisan view:clear &&
-        
-        echo 'Starting web server...' &&
-        php artisan serve --host=0.0.0.0 --port=80
-      "
+    working_dir: /var/www/html
 
   redis:
     image: redis:7-alpine
