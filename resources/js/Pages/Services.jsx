@@ -182,11 +182,11 @@ export default function Services() {
                                 <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
                                     <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl p-8">
                                         <img 
-                                            src={`https://images.unsplash.com/photo-${
-                                                index === 0 ? '1554224255-567f0bcd7d99' : // financial management
-                                                index === 1 ? '1581091226825-a6a2a5aee158' : // technical maintenance  
-                                                index === 2 ? '1589829545856-b6f2f20c8e7a' : // legal services
-                                                '1600880292203-757bb62b4baf' // client relations
+                                            src={`https://images.unsplash.com/${
+                                                index === 0 ? 'photo-1560472354-b33ff0c44a43' : // financial/calculator
+                                                index === 1 ? 'photo-1581091226825-a6a2a5aee158' : // technical maintenance  
+                                                index === 2 ? 'photo-1507003211169-0a1dd7228f2d' : // legal/office work
+                                                'photo-1600880292203-757bb62b4baf' // client relations
                                             }?w=500&h=400&fit=crop&crop=center`}
                                             alt={service.title}
                                             className="rounded-lg shadow-lg w-full h-64 object-cover"
@@ -213,16 +213,29 @@ export default function Services() {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {additionalServices.map((service, index) => (
-                            <div key={index} className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                                <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mb-6">
-                                    <service.icon className="h-6 w-6 text-white" />
+                            <div key={index} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                <div className="relative h-48">
+                                    <img 
+                                        src={`https://images.unsplash.com/photo-${
+                                            index === 0 ? '1551288049-14ec30e67a33' : // analytics/reporting - charts and graphs
+                                            index === 1 ? '1568605114967-8130f3a36994' : // security - surveillance camera
+                                            '1559136555-4f7e1ba8c213' // 24/7 support - help desk
+                                        }?w=400&h=300&fit=crop&crop=center`}
+                                        alt={service.title}
+                                        className="w-full h-full object-cover"
+                                    />
+                                    <div className="absolute top-4 left-4 w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center shadow-lg">
+                                        <service.icon className="h-6 w-6 text-white" />
+                                    </div>
                                 </div>
-                                <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                                    {service.title}
-                                </h3>
-                                <p className="text-gray-600">
-                                    {service.description}
-                                </p>
+                                <div className="p-6">
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                                        {service.title}
+                                    </h3>
+                                    <p className="text-gray-600">
+                                        {service.description}
+                                    </p>
+                                </div>
                             </div>
                         ))}
                     </div>
@@ -241,32 +254,45 @@ export default function Services() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {[
                             {
                                 step: '01',
                                 title: 'Consultația inițială',
-                                description: 'Analizăm nevoile asociației și oferim o consultație gratuită'
+                                description: 'Analizăm nevoile asociației și oferim o consultație gratuită',
+                                image: '1573496359348-928f4004e23e' // consultation meeting
                             },
                             {
                                 step: '02',
                                 title: 'Propunerea de colaborare',
-                                description: 'Elaborăm o ofertă personalizată conform nevoilor identificate'
+                                description: 'Elaborăm o ofertă personalizată conform nevoilor identificate',
+                                image: '1554224155-9da725ade4b4' // proposal document
                             },
                             {
                                 step: '03',
                                 title: 'Semnarea contractului',
-                                description: 'Formalizăm colaborarea prin contract transparent și clar'
+                                description: 'Formalizăm colaborarea prin contract transparent și clar',
+                                image: '1450101499163-71c4c95cb929' // contract signing
                             },
                             {
                                 step: '04',
                                 title: 'Implementarea serviciilor',
-                                description: 'Începem administrarea cu preluarea tuturor responsabilităților'
+                                description: 'Începem administrarea cu preluarea tuturor responsabilităților',
+                                image: '1507003211169-0a1dd7228f2d' // implementation/work
                             }
                         ].map((process, index) => (
                             <div key={index} className="text-center">
-                                <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                                    <span className="text-white font-bold text-xl">{process.step}</span>
+                                <div className="relative mb-6">
+                                    <div className="w-full h-48 bg-gray-100 rounded-lg overflow-hidden mb-4">
+                                        <img 
+                                            src={`https://images.unsplash.com/photo-${process.image}?w=300&h=200&fit=crop&crop=center`}
+                                            alt={process.title}
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
+                                    <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center mx-auto -mt-8 relative z-10 shadow-lg">
+                                        <span className="text-white font-bold text-xl">{process.step}</span>
+                                    </div>
                                 </div>
                                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
                                     {process.title}
