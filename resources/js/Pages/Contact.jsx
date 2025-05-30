@@ -123,7 +123,17 @@ export default function Contact() {
                                 <div className="space-y-2 mb-4">
                                     {info.details.map((detail, detailIndex) => (
                                         <p key={detailIndex} className="text-gray-700 font-medium">
-                                            {detail}
+                                            {info.title === 'Telefon' && detailIndex === 0 ? (
+                                                <a href={`tel:${detail}`} className="hover:text-emerald-600 transition-colors">
+                                                    {detail}
+                                                </a>
+                                            ) : info.title === 'Email' && detailIndex === 0 ? (
+                                                <a href={`mailto:${detail}`} className="hover:text-emerald-600 transition-colors">
+                                                    {detail}
+                                                </a>
+                                            ) : (
+                                                detail
+                                            )}
                                         </p>
                                     ))}
                                 </div>

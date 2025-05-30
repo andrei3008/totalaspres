@@ -213,9 +213,9 @@ export default function Home() {
                                 <PhoneIcon className="h-5 w-5" />
                                 <span>0787 444 874</span>
                             </a>
-                            <a href="mailto:contact@totalaspres.ro" className="flex items-center space-x-2 hover:text-emerald-200 transition-colors">
+                            <a href="mailto:totalaspres@gmail.com" className="flex items-center space-x-2 hover:text-emerald-200 transition-colors">
                                 <EnvelopeIcon className="h-5 w-5" />
-                                <span>contact@totalaspres.ro</span>
+                                <span>totalaspres@gmail.com</span>
                             </a>
                         </div>
                     </div>
