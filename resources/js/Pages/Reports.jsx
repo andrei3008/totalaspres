@@ -45,7 +45,13 @@ export default function Reports({ auth }) {
 
     return (
         <MainLayout>
-            <Head title="Rapoarte - SC TOTAL AS PRES SRL" />
+            <Head title="Rapoarte Lunare - SC TOTAL AS PRES SRL | Transparență Financiară">
+                <meta name="description" content="Accesați rapoartele lunare financiare pentru proprietatea dumneavoastră. Transparență completă în gestionarea fondurilor, rapoarte detaliate cu venituri, cheltuieli și solduri." />
+                <meta name="keywords" content="rapoarte lunare, rapoarte financiare, transparență, venituri, cheltuieli, solduri, gestionare fonduri, administrare imobile" />
+                <meta name="robots" content="noindex, nofollow" />
+                <meta name="author" content="SC TOTAL AS PRES SRL" />
+                <link rel="canonical" href="https://totalaspres.ro/reports" />
+            </Head>
             
             <div className="bg-gray-50 min-h-screen">
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">

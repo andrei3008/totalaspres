@@ -6,7 +6,20 @@ import { DocumentTextIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
 export default function Terms() {
     return (
         <Layout>
-            <Head title="Termeni și condiții - SC TOTAL AS PRES SRL" />
+            <Head title="Termeni și Condiții - SC TOTAL AS PRES SRL | Administrare Imobile">
+                <meta name="description" content="Termeni și condiții pentru serviciile de administrare imobile oferite de SC TOTAL AS PRES SRL. Condiții generale, obligații, responsabilități și drepturi pentru clienți în Craiova și România." />
+                <meta name="keywords" content="termeni și condiții, SC TOTAL AS PRES, administrare imobile, condiții generale, obligații, responsabilități, drepturi client, contract administrare" />
+                <meta name="author" content="SC TOTAL AS PRES SRL" />
+                <meta property="og:title" content="Termeni și Condiții SC TOTAL AS PRES SRL | Administrare Imobile" />
+                <meta property="og:description" content="Termeni și condiții pentru serviciile de administrare imobile. Condiții generale, obligații, responsabilități și drepturi pentru clienți." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://totalaspres.ro/terms" />
+                <meta property="og:locale" content="ro_RO" />
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:title" content="Termeni și Condiții SC TOTAL AS PRES SRL" />
+                <meta name="twitter:description" content="Termeni și condiții pentru serviciile de administrare imobile oferite de SC TOTAL AS PRES SRL." />
+                <link rel="canonical" href="https://totalaspres.ro/terms" />
+            </Head>
             
             {/* Hero Section */}
             <section className="relative bg-gradient-to-br from-emerald-500 to-teal-600 py-20">

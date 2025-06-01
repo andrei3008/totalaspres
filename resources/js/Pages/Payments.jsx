@@ -71,7 +71,13 @@ export default function Payments({ auth }) {
 
     return (
         <MainLayout>
-            <Head title="Plăți online - SC TOTAL AS PRES SRL" />
+            <Head title="Plăți Online - SC TOTAL AS PRES SRL | Întreținere și Contribuții">
+                <meta name="description" content="Efectuați plăți online pentru întreținere lunară, contribuții reparații și alte taxe asociație. Plăți securizate cu card bancar prin platforma SC TOTAL AS PRES SRL." />
+                <meta name="keywords" content="plăți online, întreținere lunară, contribuții reparații, taxe asociație, plată securizată, card bancar, administrare imobile" />
+                <meta name="robots" content="noindex, nofollow" />
+                <meta name="author" content="SC TOTAL AS PRES SRL" />
+                <link rel="canonical" href="https://totalaspres.ro/payments" />
+            </Head>
             
             <div className="bg-gray-50 min-h-screen">
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">

@@ -54,7 +54,21 @@ export default function Home() {
 
     return (
         <Layout>
-            <Head title="SC TOTAL AS PRES SRL - Administrare Profesională Imobile" />
+            <Head title="SC TOTAL AS PRES SRL - Administrare Profesională Imobile Craiova">
+                <meta name="description" content="SC TOTAL AS PRES SRL oferă servicii profesionale de administrare imobile în Craiova și România. Transparență totală, raportare lunară, echipă cu experiență. Contactați-ne la 0787444874." />
+                <meta name="keywords" content="administrare imobile, asociații proprietari, management imobile, Craiova, România, administrator profesional, raportare transparentă, întreținere imobile" />
+                <meta name="author" content="SC TOTAL AS PRES SRL" />
+                <meta property="og:title" content="SC TOTAL AS PRES SRL - Administrare Profesională Imobile Craiova" />
+                <meta property="og:description" content="Servicii profesionale de administrare imobile în Craiova. Transparență totală, raportare lunară, echipă cu experiență. Contactați-ne la 0787444874." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://totalaspres.ro" />
+                <meta property="og:image" content="https://totalaspres.ro/images/og-image.jpg" />
+                <meta property="og:locale" content="ro_RO" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="SC TOTAL AS PRES SRL - Administrare Profesională Imobile" />
+                <meta name="twitter:description" content="Servicii profesionale de administrare imobile în Craiova. Transparență totală, raportare lunară, echipă cu experiență." />
+                <link rel="canonical" href="https://totalaspres.ro" />
+            </Head>
             
             {/* Hero Section */}
             <section className="relative overflow-hidden bg-gradient-to-br from-emerald-500 via-teal-600 to-emerald-700">

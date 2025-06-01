@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\BuildingController;
 use App\Http\Controllers\DocumentController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -17,8 +16,7 @@ Route::get('/test', function () {
 
 Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/services', [PageController::class, 'services'])->name('services');
-Route::get('/portfolio', [BuildingController::class, 'index'])->name('portfolio');
-Route::get('/buildings/{building}', [BuildingController::class, 'show'])->name('buildings.show');
+// Portfolio routes removed - no longer needed
 Route::get('/documents', [DocumentController::class, 'index'])->name('documents');
 Route::get('/documents/{document}/download', [DocumentController::class, 'download'])->name('documents.download');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');

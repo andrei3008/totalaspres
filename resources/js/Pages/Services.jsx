@@ -111,7 +111,20 @@ export default function Services() {
 
     return (
         <Layout>
-            <Head title="Servicii - SC TOTAL AS PRES SRL" />
+            <Head title="Servicii Administrare Imobile - SC TOTAL AS PRES SRL Craiova">
+                <meta name="description" content="Servicii complete de administrare imobile în Craiova: gestionare financiară, întreținere tehnică, consultanță juridică, raportare transparentă. Contactați-ne la 0787444874." />
+                <meta name="keywords" content="servicii administrare imobile, gestionare financiară, întreținere tehnică, consultanță juridică, raportare transparentă, Craiova, România, administrator profesional" />
+                <meta name="author" content="SC TOTAL AS PRES SRL" />
+                <meta property="og:title" content="Servicii Complete Administrare Imobile | SC TOTAL AS PRES SRL" />
+                <meta property="og:description" content="Servicii profesionale de administrare imobile: gestionare financiară, întreținere tehnică, consultanță juridică, raportare transparentă în Craiova și România." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://totalaspres.ro/services" />
+                <meta property="og:locale" content="ro_RO" />
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:title" content="Servicii Administrare Imobile | SC TOTAL AS PRES SRL" />
+                <meta name="twitter:description" content="Servicii complete de administrare imobile: gestionare financiară, întreținere tehnică, consultanță juridică, raportare transparentă." />
+                <link rel="canonical" href="https://totalaspres.ro/services" />
+            </Head>
             
             {/* Hero Section */}
             <section className="relative bg-gradient-to-br from-emerald-500 to-teal-600 py-20">

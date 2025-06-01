@@ -18,7 +18,13 @@ export default function Dashboard({ auth }) {
 
     return (
         <MainLayout>
-            <Head title="Panou de administrare - SC TOTAL AS PRES SRL" />
+            <Head title={`Panou de Control ${user.name} - SC TOTAL AS PRES SRL | Administrare Imobile`}>
+                <meta name="description" content="Panoul dumneavoastră personal pentru administrarea imobilului. Accesați rapoarte, plăți, notificări și toate serviciile SC TOTAL AS PRES SRL. Gestionare eficientă și transparentă." />
+                <meta name="keywords" content="panou control, dashboard, administrare imobile, rapoarte, plăți, notificări, servicii client, gestionare proprietate" />
+                <meta name="robots" content="noindex, nofollow" />
+                <meta name="author" content="SC TOTAL AS PRES SRL" />
+                <link rel="canonical" href="https://totalaspres.ro/dashboard" />
+            </Head>
             
             {/* Hero Section */}
             <section className="bg-gradient-to-br from-emerald-600 via-green-700 to-emerald-800 py-16">

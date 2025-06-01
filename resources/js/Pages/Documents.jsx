@@ -132,7 +132,20 @@ export default function Documents({ documents = {} }) {
 
     return (
         <Layout>
-            <Head title="Documente utile - SC TOTAL AS PRES SRL" />
+            <Head title="Documente Utile Administrare Imobile - SC TOTAL AS PRES SRL">
+                <meta name="description" content="Descărcați documente utile pentru administrarea imobilelor: contracte, regulamente, formulare, ghiduri juridice, proceduri financiare și administrative. Gratuit de la SC TOTAL AS PRES SRL." />
+                <meta name="keywords" content="documente administrare imobile, contracte, regulamente, formulare, ghiduri juridice, proceduri financiare, administrative, descărcare gratuită, Craiova" />
+                <meta name="author" content="SC TOTAL AS PRES SRL" />
+                <meta property="og:title" content="Documente Utile Administrare Imobile | SC TOTAL AS PRES SRL" />
+                <meta property="og:description" content="Biblioteca de documente pentru administrarea imobilelor: contracte, regulamente, formulare, ghiduri juridice. Descărcare gratuită." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://totalaspres.ro/documents" />
+                <meta property="og:locale" content="ro_RO" />
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:title" content="Documente Utile Administrare Imobile" />
+                <meta name="twitter:description" content="Biblioteca de documente pentru administrarea imobilelor: contracte, regulamente, formulare, ghiduri juridice." />
+                <link rel="canonical" href="https://totalaspres.ro/documents" />
+            </Head>
             
             {/* Hero Section */}
             <section className="relative bg-gradient-to-br from-emerald-500 to-teal-600 py-20">

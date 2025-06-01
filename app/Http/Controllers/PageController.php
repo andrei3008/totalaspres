@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Building;
 use App\Models\Document;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
@@ -22,14 +21,6 @@ class PageController extends Controller
     public function services()
     {
         return Inertia::render('Services');
-    }
-
-    public function portfolio()
-    {
-        $buildings = Building::all();
-        return Inertia::render('Portfolio', [
-            'buildings' => $buildings
-        ]);
     }
 
     public function documents()

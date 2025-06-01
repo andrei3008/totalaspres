@@ -31,9 +31,6 @@ export default function Layout({ children }) {
                                 <Link href="/services" className="text-gray-700 hover:text-emerald-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
                                     Servicii
                                 </Link>
-                                <Link href="/portfolio" className="text-gray-700 hover:text-emerald-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
-                                    Portofoliu
-                                </Link>
                                 <Link href="/documents" className="text-gray-700 hover:text-emerald-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
                                     Documente
                                 </Link>
@@ -114,9 +111,6 @@ export default function Layout({ children }) {
                             </Link>
                             <Link href="/services" className="block text-gray-700 hover:text-emerald-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">
                                 Servicii
-                            </Link>
-                            <Link href="/portfolio" className="block text-gray-700 hover:text-emerald-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">
-                                Portofoliu
                             </Link>
                             <Link href="/documents" className="block text-gray-700 hover:text-emerald-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">
                                 Documente

@@ -44,7 +44,20 @@ export default function About() {
 
     return (
         <Layout>
-            <Head title="Despre noi - SC TOTAL AS PRES SRL" />
+            <Head title="Despre noi - SC TOTAL AS PRES SRL | Administrare Profesională Imobile">
+                <meta name="description" content="SC TOTAL AS PRES SRL - peste 15 ani de experiență în administrarea profesională de imobile în Craiova și România. Echipă dedicată, servicii transparente, peste 50 imobile administrate." />
+                <meta name="keywords" content="despre noi, SC TOTAL AS PRES, administrare imobile, echipă profesională, experiență, Craiova, România, viziune, misiune, valori" />
+                <meta name="author" content="SC TOTAL AS PRES SRL" />
+                <meta property="og:title" content="Despre SC TOTAL AS PRES SRL | Administrare Profesională Imobile" />
+                <meta property="og:description" content="Peste 15 ani de experiență în administrarea profesională de imobile. Echipă dedicată, servicii transparente, peste 50 imobile administrate în Craiova și România." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://totalaspres.ro/about" />
+                <meta property="og:locale" content="ro_RO" />
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:title" content="Despre SC TOTAL AS PRES SRL | Administrare Imobile" />
+                <meta name="twitter:description" content="Peste 15 ani de experiență în administrarea profesională de imobile. Echipă dedicată, servicii transparente." />
+                <link rel="canonical" href="https://totalaspres.ro/about" />
+            </Head>
             
             {/* Hero Section */}
             <section className="relative bg-gradient-to-br from-emerald-500 to-teal-600 py-20">

@@ -33,7 +33,13 @@ export default function Notifications({ auth }) {
 
     return (
         <MainLayout>
-            <Head title="Setări notificări - SC TOTAL AS PRES SRL" />
+            <Head title="Setări Notificări - SC TOTAL AS PRES SRL | Preferințe Comunicare">
+                <meta name="description" content="Configurați setările de notificare pentru alertele despre plăți, întreținere, urgențe și rapoarte lunare. Primiți notificări prin email sau SMS de la SC TOTAL AS PRES SRL." />
+                <meta name="keywords" content="setări notificări, alerte plăți, notificări întreținere, alertele urgență, rapoarte lunare, email, SMS, preferințe comunicare" />
+                <meta name="robots" content="noindex, nofollow" />
+                <meta name="author" content="SC TOTAL AS PRES SRL" />
+                <link rel="canonical" href="https://totalaspres.ro/notifications" />
+            </Head>
             
             <div className="bg-gray-50 min-h-screen">
                 <div className="max-w-4xl mx-auto py-16 px-4 sm:px-6 lg:px-8">

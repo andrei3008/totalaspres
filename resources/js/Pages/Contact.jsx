@@ -84,7 +84,20 @@ export default function Contact() {
 
     return (
         <Layout>
-            <Head title="Contact - SC TOTAL AS PRES SRL" />
+            <Head title="Contact SC TOTAL AS PRES SRL | Administrare Imobile Craiova | Tel: 0787444874">
+                <meta name="description" content="Contactați SC TOTAL AS PRES SRL pentru servicii de administrare imobile în Craiova. Telefon: 0787444874, Email: totalaspres@gmail.com. Program: Luni-Vineri 8:00-18:00, Sâmbătă 9:00-13:00." />
+                <meta name="keywords" content="contact, SC TOTAL AS PRES, administrare imobile, Craiova, telefon, email, program, 0787444874, totalaspres@gmail.com" />
+                <meta name="author" content="SC TOTAL AS PRES SRL" />
+                <meta property="og:title" content="Contact SC TOTAL AS PRES SRL | Administrare Imobile Craiova" />
+                <meta property="og:description" content="Contactați-ne pentru servicii de administrare imobile în Craiova. Telefon: 0787444874, Email: totalaspres@gmail.com. Răspunsul în maxim 24 de ore." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://totalaspres.ro/contact" />
+                <meta property="og:locale" content="ro_RO" />
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:title" content="Contact SC TOTAL AS PRES SRL | Tel: 0787444874" />
+                <meta name="twitter:description" content="Contactați-ne pentru servicii de administrare imobile în Craiova. Telefon: 0787444874, Email: totalaspres@gmail.com." />
+                <link rel="canonical" href="https://totalaspres.ro/contact" />
+            </Head>
             
             {/* Hero Section */}
             <section className="relative bg-gradient-to-br from-emerald-500 to-teal-600 py-20">
