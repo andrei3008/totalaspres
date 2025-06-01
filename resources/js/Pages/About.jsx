@@ -45,17 +45,17 @@ export default function About() {
     return (
         <Layout>
             <Head title="Despre noi - SC TOTAL AS PRES SRL | Administrare Profesională Imobile">
-                <meta name="description" content="SC TOTAL AS PRES SRL - peste 15 ani de experiență în administrarea profesională de imobile în Craiova și România. Echipă dedicată, servicii transparente, peste 50 imobile administrate." />
+                <meta name="description" content="SC TOTAL AS PRES SRL - peste 10 ani de experiență în administrarea profesională de imobile în Craiova și România. Echipă dedicată, servicii transparente, peste 50 imobile administrate." />
                 <meta name="keywords" content="despre noi, SC TOTAL AS PRES, administrare imobile, echipă profesională, experiență, Craiova, România, viziune, misiune, valori" />
                 <meta name="author" content="SC TOTAL AS PRES SRL" />
                 <meta property="og:title" content="Despre SC TOTAL AS PRES SRL | Administrare Profesională Imobile" />
-                <meta property="og:description" content="Peste 15 ani de experiență în administrarea profesională de imobile. Echipă dedicată, servicii transparente, peste 50 imobile administrate în Craiova și România." />
+                <meta property="og:description" content="Peste 10 ani de experiență în administrarea profesională de imobile. Echipă dedicată, servicii transparente, peste 50 imobile administrate în Craiova și România." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://totalaspres.ro/about" />
                 <meta property="og:locale" content="ro_RO" />
                 <meta name="twitter:card" content="summary" />
                 <meta name="twitter:title" content="Despre SC TOTAL AS PRES SRL | Administrare Imobile" />
-                <meta name="twitter:description" content="Peste 15 ani de experiență în administrarea profesională de imobile. Echipă dedicată, servicii transparente." />
+                <meta name="twitter:description" content="Peste 10 ani de experiență în administrarea profesională de imobile. Echipă dedicată, servicii transparente." />
                 <link rel="canonical" href="https://totalaspres.ro/about" />
             </Head>
             
@@ -81,7 +81,7 @@ export default function About() {
                                 Povestea noastră
                             </h2>
                             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                Cu peste 15 ani de experiență în domeniul administrării de imobile, 
+                                Cu peste 10 ani de experiență în domeniul administrării de imobile, 
                                 SC TOTAL AS PRES SRL a devenit partenerul de încredere pentru asociațiile 
                                 de proprietari care doresc servicii profesionale și transparente.
                             </p>

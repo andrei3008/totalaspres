@@ -17,7 +17,7 @@ export default function Home() {
         {
             icon: CurrencyDollarIcon,
             title: 'Administrare financiar-contabilă',
-            description: 'Gestionarea eficientă a bugetelor, cheltuielilor și încasărilor asociației cu transparență totală.'
+            description: 'Gestionarea eficientă a bugetelor, cheltuielilor și încasărilor asociației cu transparență totală. Întocmire liste plată.'
         },
         {
             icon: BuildingOfficeIcon,
@@ -39,6 +39,7 @@ export default function Home() {
     const benefits = [
         'Transparență totală în gestionarea fondurilor',
         'Raportare lunară detaliată',
+        'Întocmire liste plată',
         'Echipă de specialiști cu experiență',
         'Suport tehnic 24/7',
         'Prețuri competitive',
@@ -158,7 +159,7 @@ export default function Home() {
                                 De ce să alegeți TOTAL AS PRES?
                             </h2>
                             <p className="text-lg text-gray-600 mb-8">
-                                Cu peste 15 ani de experiență în administrarea imobilelor, 
+                                Cu peste 10 ani de experiență în administrarea imobilelor, 
                                 suntem partenerul de încredere pentru asociațiile de proprietari.
                             </p>
                             

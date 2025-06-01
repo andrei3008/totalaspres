@@ -20,14 +20,16 @@ export default function Services() {
         {
             icon: CurrencyDollarIcon,
             title: 'Administrare financiar-contabilă',
-            description: 'Gestionăm toate aspectele financiare ale asociației dumneavoastră cu transparență și eficiență.',
+            description: 'Gestionăm toate aspectele financiare ale asociației dumneavoastră cu transparență și eficiență, inclusiv întocmirea listelor de plată.',
             features: [
-                'Întocmirea și colectarea listelor de plată',
+                'Întocmirea și colectarea listelor de plată pentru personal',
+                'Calcularea salariilor, sporurilor și contribuțiilor sociale',
                 'Evidența contabilă completă conform normelor legale',
                 'Raportări financiare lunare detaliate',
                 'Gestionarea furnizorilor și plăților',
                 'Recuperarea debitelor restante prin metode legale',
-                'Întocmirea bugetelor anuale'
+                'Întocmirea bugetelor anuale',
+                'Declarații fiscale și contribuții către stat'
             ],
             benefits: [
                 'Transparență totală în gestionarea fondurilor',
